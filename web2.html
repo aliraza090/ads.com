@@ -39,10 +39,10 @@ function loadURLsFromFile() {
         urls = urlsFromFile.map(url => url.trim());
         // Start loading websites
         loadWebsite();
-        // Refresh the website content every 45 seconds (45000 milliseconds)
+        // Refresh the website content every 45 seconds (30000 milliseconds)
         setInterval(function() {
           loadWebsite();
-        }, 45000); // Adjust interval as needed
+        }, 30000); // Adjust interval as needed
       } else {
         console.error('Failed to load URLs from file');
       }
