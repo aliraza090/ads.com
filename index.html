@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Show Ads.com</title>
-<style>
-body{
-margin:0px;
-padding:0px;
-}
-iframe{
-   width: 100%;
-    height: 550px; /* Adjust height as needed */
-    overflow: auto;
-    margin:0px;
-    padding:0px;
-    border:0px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+        html, body {
+            height: 100%; 
+            width: 100%; 
+            overflow: hidden; /* Prevent scrollbars on body */
+        }
+        
+        iframe {
+            width: 100%; 
+            height: 100%;
+            border: none; 
+            overflow-y: scroll;
+        }
+    </style>
+    <script>
+        setInterval(function() {
+            location.reload();
+        }, 30000); 
+    </script>
 </head>
 <body>
-<iframe src="web2.html"></iframe>
-<hr>
-<iframe src="web2.html"></iframe>
-<hr>
-<iframe src="web2.html"></iframe>
-<hr>
-<iframe src="web2.html"></iframe>
-<hr>
-<iframe src="web2.html"></iframe>
-<hr>
+    
+        <iframe id="clickableArea"
+            src="https://luglawhaulsano.net/4/7687715"></iframe>
+    
+
+    <script>
+        function slowScroll() {
+            let scrollStep = 20; 
+            let delay = 30; 
+
+            let scrollInterval = setInterval(() => {
+                const iframe = document.querySelector('iframe');
+                if (iframe.contentWindow) {
+                    iframe.contentWindow.scrollBy(0, scrollStep); 
+                }
+            }, delay);
+        }
+
+        
+        window.onload = slowScroll;
+    </script>
+    
+     
 </body>
 </html>
